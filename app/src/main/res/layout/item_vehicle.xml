@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbVehicleName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="@string/radio_btn"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <TextView
+            android:id="@+id/tvVehicleCount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_margin="2dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/vehicle_count"
+            />
+
+    </LinearLayout>
+</LinearLayout>
