@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.findingqueen.MainActivity
 import com.example.findingqueen.R
 import com.example.findingqueen.databinding.FragmentInfoBinding
 import com.example.findingqueen.utils.Constants
@@ -15,6 +16,7 @@ class InfoFragment : Fragment() {
     private lateinit var binding: FragmentInfoBinding
     private val fragmentMainContainer = R.id.main_fragment_container
     private lateinit var gameFragment: GameFragment
+//    private lateinit var resultFragment: ResultFragment
 
 
     override fun onCreateView(
@@ -30,6 +32,7 @@ class InfoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         gameFragment = GameFragment()
+//        resultFragment = ResultFragment()
 
         binding.btnStartGame.setOnClickListener {
             activity?.addRemoveFragment(true,gameFragment,fragmentMainContainer,true)
@@ -38,6 +41,9 @@ class InfoFragment : Fragment() {
 
     //      Resetting data for next Game Cycle.
     private fun resetDataForNewGame(){
+//        activity?.addRemoveFragment(false,gameFragment,fragmentMainContainer)
+//        activity?.addRemoveFragment(false,resultFragment,fragmentMainContainer)
+
         Constants.PLANETS = arrayListOf()
         Constants.VEHICLES = arrayListOf()
         Constants.planetCounter = 0

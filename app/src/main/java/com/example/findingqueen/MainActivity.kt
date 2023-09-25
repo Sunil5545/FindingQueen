@@ -8,7 +8,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.findingqueen.databinding.ActivityMainBinding
+import com.example.findingqueen.fragments.GameFragment
 import com.example.findingqueen.fragments.InfoFragment
+import com.example.findingqueen.fragments.ResultFragment
 import com.example.findingqueen.models.viewmodels.MainViewModel
 import com.example.findingqueen.models.viewmodels.ViewModelFactory
 import com.example.findingqueen.repository.MainRepository

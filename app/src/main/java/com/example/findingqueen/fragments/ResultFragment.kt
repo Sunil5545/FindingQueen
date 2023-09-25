@@ -24,6 +24,7 @@ class ResultFragment : Fragment() {
     private lateinit var viewModel: MainViewModel
     private val fragmentMainContainer = R.id.main_fragment_container
     private lateinit var infoFragment: InfoFragment
+    private lateinit var resultFragment: ResultFragment
 
     private lateinit var token: String
 
@@ -48,6 +49,7 @@ class ResultFragment : Fragment() {
 
         setResultData()
         infoFragment = InfoFragment()
+        resultFragment = ResultFragment()
 
         binding.btnStartAgain.setOnClickListener {
 
