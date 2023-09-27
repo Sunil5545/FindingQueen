@@ -13,7 +13,7 @@ class ApiRetrofitClient {
         private const val BASE_URL = "https://findfalcone.geektrust.com/"
 
         var apiInterface: ApiInterface? = null
-
+// This is retrofit instance
         fun getInstance(): ApiInterface {
             val gson = GsonBuilder()
                 .setLenient()

@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         checkNetwork()
 
+//        Callback for Back Pressed.
         callBack = object : OnBackPressedCallback(true){
             override fun handleOnBackPressed() {
                 addRemoveFragment(true,infoFragment,fragmentMainContainer)
