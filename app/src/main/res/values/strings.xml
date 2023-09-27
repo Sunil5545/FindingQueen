@@ -39,5 +39,10 @@
 
     <string name="please_wait">Please wait...</string>
 
+    <string name="reset_game">Reset Game</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="error_screen">Website is facing too many requests.\nPlease try after some time.</string>
+    <string name="no_internet">No Internet Available!!</string>
+
 
 </resources>

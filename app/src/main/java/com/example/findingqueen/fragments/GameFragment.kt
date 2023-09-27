@@ -16,10 +16,7 @@ import com.example.findingqueen.adapters.DestinationListAdapter
 import com.example.findingqueen.databinding.FragmentGameBinding
 import com.example.findingqueen.models.viewmodels.MainViewModel
 import com.example.findingqueen.service.ApiResponse
-import com.example.findingqueen.utils.Constants
-import com.example.findingqueen.utils.addRemoveFragment
-import com.example.findingqueen.utils.hideProgressDialog
-import com.example.findingqueen.utils.showProgressDialog
+import com.example.findingqueen.utils.*
 
 class GameFragment : Fragment() {
 
@@ -91,6 +88,7 @@ class GameFragment : Fragment() {
                     }
                     is ApiResponse.Failure -> {
                         hideProgressDialog()
+                        setErrorScreen()
                         Log.e("Failure","Failed")
                     }
                 }
@@ -110,6 +108,7 @@ class GameFragment : Fragment() {
                     }
                     is ApiResponse.Failure -> {
                         hideProgressDialog()
+                        setErrorScreen()
                         Log.e("Failure","Failed")
                     }
                 }
@@ -129,6 +128,7 @@ class GameFragment : Fragment() {
                     }
                     is ApiResponse.Failure -> {
                         hideProgressDialog()
+                        setErrorScreen()
                         Log.e("Failure","Failed")
                     }
                 }
@@ -138,6 +138,9 @@ class GameFragment : Fragment() {
     }
 
     private fun displayData(){
+//        Set Display view
+        binding.llPlanetsView.visibility = View.VISIBLE
+        binding.llErrorScreen.visibility = View.GONE
 //        Launching Recycler view
         binding.rvDestination.layoutManager = LinearLayoutManager(requireContext(),
             LinearLayoutManager.HORIZONTAL,false)
@@ -164,6 +167,11 @@ class GameFragment : Fragment() {
             Constants.PLANETS[i].selectedPos = -1
         }
         displayData()
+    }
+
+    private fun setErrorScreen(){
+        binding.llPlanetsView.visibility = View.GONE
+        binding.llErrorScreen.visibility = View.VISIBLE
     }
 
 }

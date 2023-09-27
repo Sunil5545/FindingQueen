@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.findingqueen.R
@@ -13,10 +14,7 @@ import com.example.findingqueen.databinding.FragmentResultBinding
 import com.example.findingqueen.models.FindFalconeResponse
 import com.example.findingqueen.models.viewmodels.MainViewModel
 import com.example.findingqueen.service.ApiResponse
-import com.example.findingqueen.utils.Constants
-import com.example.findingqueen.utils.addRemoveFragment
-import com.example.findingqueen.utils.hideProgressDialog
-import com.example.findingqueen.utils.showProgressDialog
+import com.example.findingqueen.utils.*
 
 class ResultFragment : Fragment() {
 
@@ -36,7 +34,7 @@ class ResultFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentResultBinding.inflate(inflater,container,false)
         viewModel = ViewModelProvider(requireActivity())[MainViewModel::class.java]
         return binding.root
@@ -52,11 +50,11 @@ class ResultFragment : Fragment() {
         resultFragment = ResultFragment()
 
         binding.btnStartAgain.setOnClickListener {
-
             activity?.addRemoveFragment(true,infoFragment,fragmentMainContainer)
         }
 
     }
+
 
     //    Set Data of Planets and Vehicles that User selected.
     private fun setResultData(){
