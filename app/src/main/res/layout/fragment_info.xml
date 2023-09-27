@@ -27,7 +27,7 @@
                 android:textColor="@color/red"
                 android:textSize="18sp"
                 android:textStyle="normal"
-                android:layout_margin="5dp"
+                android:layout_margin="10dp"
                 android:padding="5dp"
                 android:elevation="4dp"
                 />
