@@ -7,6 +7,7 @@ import retrofit2.HttpException
 
 abstract class BaseRepository {
 
+//    This is safe Api call
     suspend fun<T> safeApiCall(apiCall:suspend () -> T) : ApiResponse<T>{
         return withContext(Dispatchers.IO){
             try {

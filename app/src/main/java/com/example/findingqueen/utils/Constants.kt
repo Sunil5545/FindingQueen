@@ -5,6 +5,8 @@ import com.example.findingqueen.models.Vehicles
 
 object Constants {
 
+
+
     var PLANETS: ArrayList<Planets> = ArrayList()
     var VEHICLES: ArrayList<Vehicles> = ArrayList()
     var planetCounter : Int = 0
