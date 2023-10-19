@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ResultFragment"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvQueenFound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:text="@string/queen_found"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    android:paddingBottom="10dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+                <TextView
+                    android:id="@+id/tvQueenNotFound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:text="@string/queen_not_found"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    android:paddingBottom="10dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/tvTimeTaken"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_taken"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/tvPlanetFound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/planet_found"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"/>
+
+                <Button
+                    android:id="@+id/btnStartAgain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/start_game_again"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/blue"
+                    android:layout_marginTop="20dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">FindingFalcone</string>
+    <string name="app_name_header">Finding Falcone</string>
+
+    <string name="game_title">FINDING FALCONE !</string>
+    <string name="game_header">Select Planets you want to search</string>
+    <string name="find_falcone_btn">FIND FALCONE !</string>
+    <string name="start_game_again">Start Again</string>
+
+    <string name="start_the_hunt">Start the Hunt</string>
+
+    <string name="queen_found">Success! Congratulations on Finding Falcone.\nKing Shan is mighty pleased.</string>
+
+    <string name="queen_not_found">Queen Al Falcone not found.\nYou have the opportunity to raid once more and claim victory.</string>
+
+    <string name="planet_found">Planet found: %1$s</string>
+    <string name="planet_not_found">Planet Not found</string>
+
+
+    <string name="select_planet">Select Planet</string>
+
+    <string name="image_description">image</string>
+    <string name="radio_btn">Radio Button</string>
+    <string name="vehicle_count">(count)</string>
+
+    <string name="game_info">In a galaxy far, far away Tara B, on the ancient planet of Lengaburu, a tale unfolds that echoes through the annals of time. After the recent war with neighbouring planet Falicornia, King Shan has exiled the Queen of Falicornia for 15 years.
+
+\n\nQueen Al Falcone is now in hiding. But if King Shan can find her before the years are up, she will be exiled for another 15 years….
+
+\n\nKing Shan has received intelligence that Al Falcone is in hiding in one of these 6 planets - DonLon, Enchai, Jebing, Sapir, Lerbin &amp; Pingasor. However he has limited resources at his disposal &amp; can send his army to only 4 of these planets.
+
+\n\nNow you being King Shan you have to find Queen Al Falcone.
+</string>
+
+    <string name="time_taken">Time Taken : %1$s</string>
+
+    <string name="select_4_planets">Select 4 vehicles to HUNT</string>
+    <string name="ready_for_hunt">You are Ready for HUNT</string>
+
+    <string name="please_wait">Please wait...</string>
+
+    <string name="reset_game">Reset Game</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="error_screen">Website is facing too many requests.\nPlease try after some time.</string>
+    <string name="no_internet">No Internet Available!!</string>
+
+
+</resources>
